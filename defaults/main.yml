@@ -1,0 +1,3 @@
+---
+nginx_remove_default_server_confs: no
+nginx_replace_default_http_conf: no

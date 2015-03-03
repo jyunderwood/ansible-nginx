@@ -1,0 +1,14 @@
+---
+- name: "add NGINX signing key"
+  apt_key: url=http://nginx.org/keys/nginx_signing.key state=present
+
+- name: "add NGINX repo (debian)"
+  when: ansible_distribution == "Debian"
+  apt_repository: repo="deb http://nginx.org/packages/debian {{ ansible_distribution_release }} nginx" state=present
+
+- name: "add NGINX repo (ubuntu)"
+  when: ansible_distribution == "Ubuntu"
+  apt_repository: repo="deb http://nginx.org/packages/ubuntu {{ ansible_distribution_release }} nginx" state=present
+
+- name: "install NINGX"
+  apt: pkg=nginx update_cache=yes state=latest

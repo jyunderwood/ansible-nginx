@@ -1,0 +1,12 @@
+---
+galaxy_info:
+  author: Jonathan Underwood
+  company: jyunderwood.com
+  description: "Installs NGINX with via the offical apt repo"
+  license: MIT
+  min_ansible_version: 1.6
+
+  categories:
+    - web
+
+dependencies: []
