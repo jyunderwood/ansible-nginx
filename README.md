@@ -18,8 +18,8 @@ Requires `sudo` or root access.
 
 ## Variables
 
-`nginx_remove_default_server_confs` (default: no) Will delete the `default` and `example_ssl` server config files.
-`nginx_replace_default_http_conf` (default: no) Will replace the default `nginx.conf` config file.
+- `nginx_remove_default_server_confs` (default: no) Will delete the `default` and `example_ssl` server config files.
+- `nginx_replace_default_http_conf` (default: no) Will replace the default `nginx.conf` config file.
 
 ## License
 
